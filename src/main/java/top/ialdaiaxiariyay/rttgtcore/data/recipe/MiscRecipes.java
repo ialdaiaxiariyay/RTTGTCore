@@ -17,7 +17,7 @@ public class MiscRecipes {
     public static void AllialdgtRecipe(Consumer<FinishedRecipe> provider) {
         COMPRESSOR_RECIPES.recipeBuilder("large_shape_world_void_pump")
                 .inputItems(GetRegistries.getItem("gtceu:hv_fluid_drilling_rig"),64)
-                .outputItems(GetRegistries.getItem("ialdgtcore:large_shape_world_void_pump"))
+                .outputItems(GetRegistries.getItem("rttgtcore:large_shape_world_void_pump"))
                 .duration(1000)
                 .EUt(GTValues.VA[GTValues.HV])
                 .save(provider);
@@ -34,8 +34,9 @@ public class MiscRecipes {
                 .inputItems(GetRegistries.getItem("gtceu:alloy_blast_smelter"))
                 .inputItems(GetRegistries.getItem("gtceu:heat_vent"),4)
                 .inputItems(GetRegistries.getItem("gtceu:high_temperature_smelting_casing"),4)
-                .outputItems(GetRegistries.getItem("ialdgtcore:general_energy_furnace"))
-                .duration(150).EUt(GTValues.VA[GTValues.LuV])
+                .outputItems(GetRegistries.getItem("rttgtcore:general_energy_furnace"))
+                .duration(150)
+                .EUt(GTValues.VA[GTValues.LuV])
                 .save(provider);
 
         ASSEMBLER_RECIPES.recipeBuilder("compressed_block_transmutation_chamber")
@@ -43,21 +44,24 @@ public class MiscRecipes {
                 .inputItems(GetRegistries.getItem("gtlcore:aluminium_bronze_casing"), 138)
                 .inputItems(GetRegistries.getItem("gtceu:tempered_glass"),100)
                 .inputItems(GetRegistries.getItem("kubejs:shining_obsidian"),25)
-                .outputItems(GetRegistries.getItem("ialdgtcore:compressed_block_transmutation_chamber"))
-                .duration(550).EUt(GTValues.VA[GTValues.IV])
+                .outputItems(GetRegistries.getItem("rttgtcore:compressed_block_transmutation_chamber"))
+                .duration(550)
+                .EUt(GTValues.VA[GTValues.IV])
                 .save(provider);
 
-        Compressed_Block_Transmutation_Chamber.recipeBuilder("essence_block_ialdgtcore")
+        Compressed_Block_Transmutation_Chamber.recipeBuilder("essence_block_rttgtcore")
                 .circuitMeta(1)
                 .inputItems(GetRegistries.getItem("minecraft:bone_block"))
                 .outputItems(GetRegistries.getItem("kubejs:essence_block"))
-                .duration(1000).EUt(GTValues.VA[GTValues.LV])
+                .duration(1000)
+                .EUt(GTValues.VA[GTValues.LV])
                 .save(provider);
 
         THERMOMAGNETIC_COOLING_GENERATOR.recipeBuilder("thermomagnetic_cooling_generator_1")
                 .inputItems(GetRegistries.getItem("minecraft:redstone_block"),32)
                 .inputItems(GetRegistries.getItem("minecraft:iron_block"),32)
-                .duration(1000).EUt(-4096)
+                .duration(1000)
+                .EUt(-4096)
                 .save(provider);
 
         ASSEMBLER_RECIPES.recipeBuilder("thermomagnetic_cooling_generator")
@@ -65,8 +69,9 @@ public class MiscRecipes {
                 .inputItems(GetRegistries.getItem("minecraft:blue_ice"), 64)
                 .inputItems(GetRegistries.getItem("gtceu:lv_electric_motor"),2)
                 .inputItems(GetRegistries.getItem("gtceu:lv_machine_hull"),2)
-                .outputItems(GetRegistries.getItem("ialdgtcore:thermomagnetic_cooling_generator"))
-                .duration(140).EUt(GTValues.VA[GTValues.LV])
+                .outputItems(GetRegistries.getItem("rttgtcore:thermomagnetic_cooling_generator"))
+                .duration(140)
+                .EUt(GTValues.VA[GTValues.LV])
                 .save(provider);
 
 }

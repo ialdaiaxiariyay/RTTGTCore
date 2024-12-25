@@ -24,7 +24,6 @@ public class RTTGTAddon implements IGTAddon {
     @Override
     public void initializeAddon() {
     }
-
     @Override
     public void registerElements() {
         item.init();
